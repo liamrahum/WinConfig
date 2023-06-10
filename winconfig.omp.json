@@ -12,20 +12,18 @@
         },
         {
           "foreground": "#97DFFC",
+          "style": "plain",
+          "template": "[<#D9DBF1>\uf0e7</>]",
+          "type": "root"
+        },
+        {
+          "foreground": "#97DFFC",
           "properties": {
             "style": "full"
           },
           "style": "plain",
           "template": "[<#D9DBF1>{{ .Path }}</>]",
           "type": "path"
-        },
-        {
-          "properties": {
-            "root_icon": "\uf292"
-          },
-          "style": "diamond",
-          "template": "\uf0e7",
-          "type": "root"
         },
         {
           "foreground": "#D9DBF1",
@@ -49,12 +47,6 @@
           "style": "plain",
           "template": "[{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}]",
           "type": "kubectl"
-        },
-        {
-          "foreground": "#D9DBF1",
-          "style": "plain",
-          "template": "[\uf0e7]",
-          "type": "root"
         }
       ],
       "type": "prompt"
