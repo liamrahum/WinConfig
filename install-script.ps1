@@ -7,15 +7,15 @@ catch {
     Install-Script -Name winget-install -Force
     winget-install.ps1
 }
-winget.exe install Git.Git 
+
 winget.exe install JanDeDobbeleer.OhMyPosh -s winget
-winget.exe install Brave.Brave
-winget.exe install Discord.Discord
 winget.exe install Microsoft.VisualStudioCode
 winget.exe install Microsoft.PowerToys
 winget.exe install Neovim.Neovim
 
-winget.exe install MHNexus.HxD
+#winget.exe install Brave.Brave
+#winget.exe install Discord.Discord
+#winget.exe install MHNexus.HxD
 
 
 # Configs copying
@@ -30,5 +30,6 @@ Copy-Item -Path ".\configs\Microsoft.PowerShell_profile.ps1" -Destination $([Env
 # Windows activation script
 Invoke-RestMethod https://massgrave.dev/get | Invoke-Expression
 
+
 # Run Chris Titus' toolbox
-Invoke-RestMethod https://christitus.com/win | Invoke-Expression
+#Invoke-RestMethod https://christitus.com/win | Invoke-Expression
